@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html,
+body,
+input {
+  font-family: "Maven Pro", sans-serif;
+}
+
+header {
+  background: url(./assets/bg.png) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  color: white;
+  padding: 12rem 5rem;
+  z-index: 5;
+  position: relative;
+}
+
+footer {
+  background: url(./assets/bg.png) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 12.8rem 12rem 20rem 12rem;
+}
+
+main {
+  background-color: #16181d;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 0;
+  background-color: #16181d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e3646e;
+}
+
+.introContainer {
+  align-items: center;
+  text-align: center;
+  width: max(78rem, auto);
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.avatarContainer {
+  display: flex;
+  position: relative;
+  width: 13.2rem;
+  height: 13.2rem;
+  margin: 0 auto;
+}
+
+.avatar {
+  padding: 0.2rem;
+  width: 13.1rem;
+  height: 13.1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e3646e;
+}
+
+.codePic {
+  height: 3.3rem;
+  height: 3.3rem;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.tittleContainer {
+  margin: 5.6rem auto;
+  max-width: 68rem;
+}
+
+.tittleContainer h3 {
+  color: #c0c4ce;
+  text-align: center;
+  font-family: Inconsolata;
+  font-size: 2rem;
+  line-height: 2.4rem; /* 24px */
+}
+
+.tittleContainer h3 span {
+  color: #e3646e;
+  font-family: Inconsolata;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.tittleContainer h1 {
+  color: #e2e4e9;
+  text-align: center;
+  font-family: Asap;
+  font-size: 5.6rem;
+  font-weight: 700;
+  margin: 0.8rem auto;
+}
+
+.tittleContainer p {
+  color: #878ea1;
+  text-align: center;
+  font-family: "Maven Pro";
+  font-size: 1.4rem;
+  line-height: 1.96rem;
+}
+
+.social-medias {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+  padding: 1.6rem 2.2rem;
+  align-items: center;
+}
+
+.social {
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  background-color: #292c34;
+  border-radius: 20rem;
+  transition: all 150ms ease-in;
+}
+
+.social:hover{
+  background-color: #3f4450;
+  transform: scale(0.9);
+}
+
+.social a img {
+  width: 2.4rem;
+  height: 2.4rem;
+  align-items: center;
+}
+
+.social a {
+  display: flex;
+  gap: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  color: #c0c4ce;
+  align-items: center;
+  font-family: "Maven Pro";
+  font-size: 1.6rem;
+  line-height: 2.2rem; /* 22.4px */
+}
+
+.arrow {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+}
+
+.mainContainer {
+  padding: 7.2rem 12rem 14rem 12.8rem;
+}
+
+.titleMain {
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.2rem 3.6rem;
+}
+
+.titleMain span {
+  color: #e3646e;
+  font-family: Inconsolata;
+  font-size: 2rem;
+  line-height: 120%; /* 24px */
+}
+
+.titleMain h3 {
+  color: #e2e4e9;
+  font-family: Asap;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+  margin: 0.8rem 0 5.6rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 2.2rem;
+  justify-content: center;
+}
+
+.item {
+  width: 41rem;
+  height: 28rem;
+  border-radius: 1.2rem;
+  background-color: #292c34;
+  padding: 1.2rem;
+  overflow: hidden;
+  transition: all 250ms ease-out;
+}
+
+.item a{
+  text-decoration: none;
+}
+
+.item img {
+  width: 38.6rem;
+  height: 15.6rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  object-fit: cover;
+  background-color: #292c34;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  background-color: #16181d;
+  border: 1px solid #e3646f59;
+  cursor: pointer;
+}
+
+.details h3 {
+  color: #e2e4e9;
+  font-family: Asap;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 2.4rem 0 0.8rem 0.4rem;
+}
+
+.details p {
+  color: #c0c4ce;
+  font-family: "Maven Pro";
+  font-size: 1.4rem;
+}
+
+.services {
+  background-color: #0d0e11;
+  padding: 8.8rem 12rem;
+}
+
+.serviceTittle span {
+  display: block;
+  color: #e3646e;
+  text-align: center;
+  font-family: Inconsolata;
+  font-size: 2rem;
+  line-height: 120%; /* 24px */
+}
+
+.serviceTittle h3 {
+  color: #e2e4e9;
+  text-align: center;
+  font-family: Asap;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+  margin: 0.8rem 0 5.6rem 0;
+}
+
+.servicesCards {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+}
+
+.serviceItem {
+  padding: 2rem;
+  border-radius: 1.2rem;
+  border: 2px solid #16181d;
+  width: 28rem;
+  transition: all 150ms ease-in;
+}
+
+.serviceItem:hover{
+  background-color: #23262e85;
+  transform: scale(0.95);
+}
+
+.serviceItem img {
+  width: 4.8rem;
+  height: 4.8rem;
+  object-fit: cover;
+  margin: 0 0 2rem 0;
+}
+
+.serviceItem h3 {
+  color: #e2e4e9;
+  font-family: Asap;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+}
+
+.serviceItem p {
+  color: #c0c4ce;
+  font-family: "Maven Pro";
+  font-size: 1.4rem;
+  line-height: 140%; /* 19.6px */
+  margin: 0.8rem 0;
+}
+
+.footerTittle {
+  text-align: center;
+  padding: 1.6rem 2.2rem;
+  margin: 0 0 4.8rem 0;
+}
+
+.footerTittle span {
+  color: #bb72e9;
+  font-family: Inconsolata;
+  font-size: 2rem;
+  line-height: 120%; /* 24px */
+}
+
+.footerTittle h3 {
+  margin: 0.8rem 0 0.8rem 0;
+  color: #e2e4e9;
+  font-family: Asap;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+
+.footerTittle p {
+  color: #c0c4ce;
+  font-family: "Maven Pro";
+  font-size: 1.6rem;
+  line-height: 140%; /* 22.4px */
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin: 0 auto;
+  width: 42rem;
+}
+.contactItem a button {
+  position: relative;
+  cursor: pointer;
+  text-align: start;
+  padding: 2rem;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  border-radius: 0.8rem;
+  background: #292c34;
+
+  color: #c0c4ce;
+  font-family: "Maven Pro";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+
+  transition: all 180ms ease-in;
+}
+
+.contactItem a button:hover{
+  background-color: #3c4150;
+  transform: scale(1.05);
+}
+
+.contactItem a button i {
+  margin-right: 1.2rem;
+}
+
+.contactItem a button img {
+  position: absolute;
+  right: 5%;
+}
+
+/* KEY-FRAMES */
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-7-2 19:55:43
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
